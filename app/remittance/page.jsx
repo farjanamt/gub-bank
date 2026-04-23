@@ -25,7 +25,7 @@ export default function Remittance() {
   const exchangeRate = useMemo(() => {
     const fromRate = rates[fromCurrency];
     const toRate = rates[toCurrency];
-    return toRate / fromRate;
+    return fromRate / toRate;
   }, [fromCurrency, toCurrency]);
 
   const receiveAmount = useMemo(() => {
