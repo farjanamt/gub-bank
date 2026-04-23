@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "../context/AuthContext";
-import ProfileDropdown from "../components/ProfileDropdown";
-import { db } from "../firebase";
+import { useAuth } from "@/context/AuthContext";
+import ProfileDropdown from "@/components/ProfileDropdown";
+import { db } from "@/lib/firebase";
 import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 export default function Dashboard() {
